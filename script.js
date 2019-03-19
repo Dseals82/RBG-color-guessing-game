@@ -101,3 +101,12 @@ function randomColor() {
   var b = Math.floor(Math.random() * 256);
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
+
+//Adding in scoreboard do we need a form for this?
+
+//store the variable scoreCount so that we can grab it later. Set it equal to 0,
+//we can reset this count whenever the page is reloaded
+let scoreCount = 0;
+function scoreCount(){
+
+}
