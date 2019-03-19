@@ -73,3 +73,10 @@ button:hover {
   color: white;
   background: steelblue;
 }
+
+/* USER SCORE AND LATER CSS */
+
+/* //selecting the id instead of the class so that css looks to this before other options */
+#userScoreID{
+  color: white;
+}
