@@ -105,8 +105,11 @@ function randomColor() {
 //Adding in scoreboard do we need a form for this?
 
 //store the variable scoreCount so that we can grab it later. Set it equal to 0,
-//we can reset this count whenever the page is reloaded
+//we can reset this count whenever the page is reloaded,
 let scoreCount = 0;
-function scoreCount(){
+
+//let's test for it -
+function scoreCountIncrease(){
+
 
 }
