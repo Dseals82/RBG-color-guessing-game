@@ -7,6 +7,7 @@ var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
+var scoreCount = 0;
 
 init();
 
@@ -17,6 +18,8 @@ function init(){
       modeButtons[0].classList.remove("selected");
       modeButtons[1].classList.remove("selected");
       this.classList.add("selected");
+      //this doesnt seem to have a baseline, can we run this when the user selects?
+      //maybe toggle visibility state
       this.textContent === "Easy" ? numberOfSquares = 3: numberOfSquares = 6;
       reset();
     });
@@ -30,6 +33,9 @@ function init(){
       //compare color to picked color
       if(clickedColor === pickedColor){
         messageDisplay.textContent = "Nice! You Got it!";
+        //handling scorecount increase here without outer function
+        scoreCount++;
+        console.log(scoreCount)
         resetButton.textContent = "Play Again?"
         changeColors(clickedColor);
         h1.style.backgroundColor = clickedColor;
@@ -106,10 +112,11 @@ function randomColor() {
 
 //store the variable scoreCount so that we can grab it later. Set it equal to 0,
 //we can reset this count whenever the page is reloaded,
-let scoreCount = 0;
-
-//let's test for it -
-function scoreCountIncrease(){
-
-
-}
+// let scoreCount = 0;
+//
+// //let's test for it -
+// function scoreCountIncrease(){
+//
+//   var userChoice =
+//
+// }
